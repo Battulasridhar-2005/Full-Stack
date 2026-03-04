@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Task 1 - Student Registration</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+text-align:center;
+}
+
+form{
+background:white;
+width:350px;
+margin:auto;
+padding:20px;
+border-radius:8px;
+}
+
+input,select{
+width:100%;
+padding:8px;
+margin:8px 0;
+}
+
+button{
+background:blue;
+color:white;
+padding:10px;
+border:none;
+width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+<input type="text" placeholder="Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="date">
+
+<select>
+<option>CSE</option>
+<option>IT</option>
+<option>ECE</option>
+</select>
+
+<input type="text" placeholder="Phone">
+
+<button>Register</button>
+
+</form>
+
+</body>
+</html>
+
+<!-- SQL CODE
+
+CREATE DATABASE student_db;
+
+USE student_db;
+
+CREATE TABLE students(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50),
+email VARCHAR(50),
+dob DATE,
+department VARCHAR(20),
+phone VARCHAR(15)
+);
+
+SELECT * FROM students;
+
+-->

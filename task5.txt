@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 5 - Transaction Simulation</title>
+</head>
+
+<body>
+
+<h2 align="center">Online Payment Simulation</h2>
+
+<p align="center">
+This task demonstrates database transactions using COMMIT and ROLLBACK.
+</p>
+
+</body>
+</html>
+
+<!-- SQL CODE
+
+CREATE TABLE accounts(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+balance INT
+);
+
+START TRANSACTION;
+
+UPDATE accounts
+SET balance=balance-500
+WHERE id=1;
+
+UPDATE accounts
+SET balance=balance+500
+WHERE id=2;
+
+COMMIT;
+
+-- If error occurs
+
+ROLLBACK;
+
+-->

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Task 2 - Student Dashboard</title>
+
+<style>
+
+table{
+margin:auto;
+border-collapse:collapse;
+width:60%;
+}
+
+th,td{
+border:1px solid black;
+padding:10px;
+}
+
+th{
+background:green;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2 align="center">Student Dashboard</h2>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Department</th>
+<th>DOB</th>
+</tr>
+
+<tr>
+<td>Rahul</td>
+<td>CSE</td>
+<td>2003-05-20</td>
+</tr>
+
+<tr>
+<td>Priya</td>
+<td>IT</td>
+<td>2002-11-10</td>
+</tr>
+
+<tr>
+<td>Arjun</td>
+<td>ECE</td>
+<td>2003-03-15</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+<!-- SQL CODE
+
+SELECT * FROM students ORDER BY name;
+
+SELECT * FROM students ORDER BY dob;
+
+SELECT * FROM students WHERE department='CSE';
+
+SELECT department,COUNT(*) 
+FROM students
+GROUP BY department;
+
+-->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Task 3 - Login System</title>
+
+<script>
+
+function validate(){
+
+let user=document.getElementById("username").value;
+let pass=document.getElementById("password").value;
+
+if(user=="" || pass=="")
+{
+alert("All fields required");
+return false;
+}
+
+alert("Login Successful");
+
+return true;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2 align="center">Login Page</h2>
+
+<form onsubmit="return validate()" align="center">
+
+<input type="text" id="username" placeholder="Username"><br><br>
+
+<input type="password" id="password" placeholder="Password"><br><br>
+
+<button>Login</button>
+
+</form>
+
+</body>
+</html>
+
+<!-- SQL CODE
+
+CREATE TABLE users(
+id INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50),
+password VARCHAR(50)
+);
+
+SELECT * FROM users
+WHERE username='admin' AND password='1234';
+
+-->
