@@ -1,0 +1,23 @@
+
+mkdir my-microservices
+cd my-microservices
+git init
+echo "# Microservices Demo" > README.md
+git add .
+git commit -m "Initial commit with project structure"
+git remote add origin https://github.com/your-username/microservices-demo.git
+git push -u origin main
+
+# Task 20 – Feature branch, merge, conflict
+git checkout -b feature/add-discount
+# edit product-service code
+git add .
+git commit -m "Add discount field to product"
+git checkout main
+git merge feature/add-discount
+
+# Create conflict intentionally
+# On main: change product name field
+# On feature branch: change same line
+git merge feature/add-discount  # conflict occurs
+# resolve manually, then git add + commit

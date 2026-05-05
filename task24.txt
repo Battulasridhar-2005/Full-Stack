@@ -1,0 +1,6 @@
+Evaluation of Vibe Coding
+Aspect	Manual Coding	AI-Assisted (Vibe)
+Speed	Medium	High (iterative prompts)
+Code quality	High (if expert)	Medium–High (needs review)
+Scalability patterns	Manual	AI suggests (if prompted)
+Security config	Requires deep knowledge	Good for basic, verify advanced

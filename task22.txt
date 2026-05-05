@@ -1,0 +1,7 @@
+
+Service Type	AWS	Google Cloud	Azure
+Compute	EC2, Lambda	Compute Engine, Cloud Run	VMs, Functions
+Storage	S3, EBS	Cloud Storage, Persistent Disk	Blob Storage, Disk
+Database	RDS, DynamoDB	Cloud SQL, Firestore	SQL Database, Cosmos DB
+Networking	VPC, API Gateway	VPC, Cloud Load Balancing	VNet, Application Gateway
+Pricing Model	Pay-as-you-go, per hour/second	Per minute/second, sustained use	Per minute, hybrid options

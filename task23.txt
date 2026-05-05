@@ -1,0 +1,16 @@
+# docker-compose.yml
+services:
+  eureka:
+    image: springcloud/eureka
+    ports:
+      - "8761:8761"
+  product-service:
+    build: ./product-catalog
+    depends_on: [eureka]
+  order-service:
+    build: ./order
+    depends_on: [eureka, product-service]
+  gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
